@@ -15,7 +15,7 @@ class TurnSignals extends StatelessWidget {
             SignalLeft(),
             Container(
               width: 0,
-              height: 250,
+              height: 200,
             ),
             SignalRight(),
           ],
