@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'chevrons.dart';
-import 'animated_chevrons.dart';
+import 'signals.dart';
 
 class TurnSignals extends StatelessWidget {
 
@@ -13,18 +12,12 @@ class TurnSignals extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            AnimatedChevronLeft(delay: 400),
-            AnimatedChevronLeft(delay: 300),
-            AnimatedChevronLeft(delay: 200),
-            AnimatedChevronLeft(delay: 100),
+            SignalLeft(),
             Container(
               width: 0,
               height: 250,
             ),
-            AnimatedChevronRight(delay: 100),
-            AnimatedChevronRight(delay: 200),
-            AnimatedChevronRight(delay: 300),
-            AnimatedChevronRight(delay: 400),
+            SignalRight(),
           ],
         ),
       ),

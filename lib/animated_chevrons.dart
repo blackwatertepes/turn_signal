@@ -4,7 +4,7 @@ import 'package:simple_animations/simple_animations.dart';
 import 'chevrons.dart';
 
 class AnimatedChevronLeft extends StatelessWidget {
-  AnimatedChevronLeft({ this.delay = 0, this.duration = 500 }) : super();
+  AnimatedChevronLeft({ this.delay = 0, this.duration = 400 }) : super();
 
   final int delay;
   final int duration;
