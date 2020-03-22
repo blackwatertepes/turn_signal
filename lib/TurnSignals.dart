@@ -9,12 +9,12 @@ class TurnSignals extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.black,
       body: Center(
-        child: Column(
+        child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SignalLeft(),
             Container(
-              width: 0,
+              width: 200,
               height: 200,
             ),
             SignalRight(),

@@ -36,7 +36,7 @@ class SignalLeftState extends State<SignalLeft> {
         width: 290,
         height: 300,
         color: Color(0x00FF0000),
-      ) : Column(
+      ) : Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           AnimatedChevronLeft(delay: 400),
@@ -82,7 +82,7 @@ class SignalRightState extends State<SignalRight> {
         width: 290,
         height: 300,
         color: Color(0x00FF0000),
-      ) : Column(
+      ) : Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           AnimatedChevronRight(delay: 100),

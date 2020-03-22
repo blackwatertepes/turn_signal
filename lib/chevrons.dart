@@ -9,7 +9,7 @@ class ChevronLeft extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomPaint(
       painter: ChevronLeftPainter(opacity: opacity),
-      size: Size(0.0, 60.0),
+      size: Size(60.0, 60.0),
     );
   }
 }
@@ -26,11 +26,11 @@ class ChevronLeftPainter extends CustomPainter {
     Path path = Path();
     path.addPolygon([
       Offset(0.0, 0.0),
-      Offset(150.0, 50.0),
-      Offset(150.0, 100.0),
-      Offset(0.0, 50.0),
-      Offset(-150.0, 100.0),
-      Offset(-150.0, 50.0),
+      Offset(50.0, 150.0),
+      Offset(100.0, 150.0),
+      Offset(50.0, 0.0),
+      Offset(100.0, -150.0),
+      Offset(50.0, -150.0),
     ], true);
     canvas.drawPath(path, paint);
   }
@@ -48,7 +48,7 @@ class ChevronRight extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomPaint(
       painter: ChevronRightPainter(opacity: opacity),
-      size: Size(0.0, 60.0),
+      size: Size(60.0, 60.0),
     );
   }
 }
@@ -65,11 +65,11 @@ class ChevronRightPainter extends CustomPainter {
     Path path = Path();
     path.addPolygon([
       Offset(0.0, 0.0),
-      Offset(150.0, -50.0),
-      Offset(150.0, -100.0),
-      Offset(0.0, -50.0),
-      Offset(-150.0, -100.0),
-      Offset(-150.0, -50.0),
+      Offset(-50.0, 150.0),
+      Offset(-100.0, 150.0),
+      Offset(-50.0, 0.0),
+      Offset(-100.0, -150.0),
+      Offset(-50.0, -150.0),
     ], true);
     canvas.drawPath(path, paint);
   }
